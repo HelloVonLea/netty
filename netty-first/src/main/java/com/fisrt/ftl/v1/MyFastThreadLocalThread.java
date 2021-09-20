@@ -1,4 +1,4 @@
-package com.fisrt.ftl;
+package com.fisrt.ftl.v1;
 
 /**
  * 含有MyInternalThreadLocalMap的线程
