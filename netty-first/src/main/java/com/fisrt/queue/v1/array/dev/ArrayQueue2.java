@@ -1,30 +1,36 @@
-package com.fisrt.queue.v1.array;
+package com.fisrt.queue.v1.array.dev;
 
 import com.fisrt.queue.v1.Queue;
 
 /**
  * 循环数组实现的队列
  * <p>
+ * ArrayQueue1的数组改为循环数组，
+ * 利用一个环和两个指针解决问题。
+ * </p>
+ * <p>
  * 循环数组涉及到一个问题：
  * 如何判断数组满了或空了？
  * 在ArrayBlockingQueue中是size=elements.length表示满了，
  * size==0表示空了。
- * 有三种方法：
+ * 循环数组判断满/空有三种方法：
  * 1.预存长度法
  * 也就是size,入队->size+1,出队->size-1,数组长度==size为满了，
  * size==0为空。
  * 2.空一位法
+ * 3.设置标志位法
+ * </p>
  *
  * @since 2021/10/11 15:52
  */
-public class ArrayQueue3<E> implements Queue<E> {
+public class ArrayQueue2<E> implements Queue<E> {
     private Object[] elements;
     //元素个数
     private int size;
     private int putIndex;
     private int takeIndex;
 
-    public ArrayQueue3(int capacity) {
+    public ArrayQueue2(int capacity) {
         this.elements = new Object[capacity];
     }
 

@@ -11,7 +11,9 @@ import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author libo
+ * 最近在网上看到一个题：
+ * 用两个线程，一个输出数字，一个输出字母，交替输出 1A2B3C4D...26Z
+ *
  * @since 2021/9/22 17:13
  */
 public class OrderOutTest {

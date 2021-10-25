@@ -1,6 +1,7 @@
-package com.fisrt.queue.v1;
+package com.fisrt.queue.v1.array.drafts.test;
 
-import com.fisrt.queue.v1.array.ArrayQueue2;
+import com.fisrt.queue.v1.Queue;
+import com.fisrt.queue.v1.array.dev.ArrayQueue2;
 
 import java.util.Collection;
 import java.util.LinkedList;
